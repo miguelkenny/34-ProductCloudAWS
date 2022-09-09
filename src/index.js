@@ -23,7 +23,7 @@ const newArrayMessage = []
 
 /* Desafio 29 */
 const cpus = os.cpus()
-const PORT = Number(process.argv[2]) || 3000
+const PORT = Number(process.env.PORT) || 3000
 const iscluster = process.argv[3] === "cluster"
 
 // 
